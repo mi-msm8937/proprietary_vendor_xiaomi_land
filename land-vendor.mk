@@ -18,6 +18,8 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/land
 
+$(call inherit-product, vendor/xiaomi/land/land-vendor-vndk.mk)
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/land/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
     vendor/xiaomi/land/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
